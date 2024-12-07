@@ -11,7 +11,19 @@
       "email": "mobina@example.com",
       "password": "password123",
       "followers": 1000,
-      "following": 150
+      "following": 150,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "mahsa",
@@ -24,7 +36,19 @@
       "email": "mahsa@example.com",
       "password": "password456",
       "followers": 800,
-      "following": 100
+      "following": 100,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "farbod",
@@ -37,7 +61,19 @@
       "email": "farbod@example.com",
       "password": "farbod789",
       "followers": 950,
-      "following": 200
+      "following": 200,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "elnaz",
@@ -50,7 +86,19 @@
       "email": "elnaz@example.com",
       "password": "elnaz123",
       "followers": 700,
-      "following": 130
+      "following": 130,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "mohammad",
@@ -63,7 +111,19 @@
       "email": "mohammad@example.com",
       "password": "mohammad456",
       "followers": 600,
-      "following": 90
+      "following": 90,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "maral",
@@ -76,7 +136,19 @@
       "email": "maral@example.com",
       "password": "maral789",
       "followers": 750,
-      "following": 120
+      "following": 120,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "milad",
@@ -89,7 +161,19 @@
       "email": "milad@example.com",
       "password": "milad123",
       "followers": 670,
-      "following": 110
+      "following": 110,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "ali",
@@ -102,7 +186,19 @@
       "email": "ali@example.com",
       "password": "ali456",
       "followers": 500,
-      "following": 80
+      "following": 80,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "melika",
@@ -115,7 +211,19 @@
       "email": "melika@example.com",
       "password": "melika789",
       "followers": 550,
-      "following": 70
+      "following": 70,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     },
     {
       "name": "yalda",
@@ -128,7 +236,19 @@
       "email": "yalda@example.com",
       "password": "yalda123",
       "followers": 480,
-      "following": 60
+      "following": 60,
+      "answeredQuestions": [
+        {  "text": "سوال 1: متن سوال اول", "answered": true },
+        {  "text": "سوال 2: متن سوال دوم", "answered": true },
+        {  "text": "سوال 3: متن سوال سوم", "answered": false },
+        {  "text": "سوال 4: متن سوال چهارم", "answered": true },
+        {  "text": "سوال 5: متن سوال پنجم", "answered": false },
+        {  "text": "سوال 6: متن سوال ششم", "answered": false },
+        {  "text": "سوال 7: متن سوال هفتم", "answered": true },
+        {  "text": "سوال 8: متن سوال هشتم", "answered": false },
+        {  "text": "سوال 9: متن سوال نهم", "answered": true },
+        {  "text": "سوال 10: متن سوال دهم", "answered": false }
+      ]
     }
   ]
 }
