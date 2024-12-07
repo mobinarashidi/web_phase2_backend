@@ -1,0 +1,14 @@
+{
+  "answeredQuestions": [
+    { "id": 1, "text": "سوال 1: متن سوال اول", "answered": true },
+    { "id": 2, "text": "سوال 2: متن سوال دوم", "answered": true },
+    { "id": 3, "text": "سوال 3: متن سوال سوم", "answered": false },
+    { "id": 4, "text": "سوال 4: متن سوال چهارم", "answered": true },
+    { "id": 5, "text": "سوال 5: متن سوال پنجم", "answered": false },
+    { "id": 6, "text": "سوال 6: متن سوال ششم", "answered": false },
+    { "id": 7, "text": "سوال 7: متن سوال هفتم", "answered": true },
+    { "id": 8, "text": "سوال 8: متن سوال هشتم", "answered": false },
+    { "id": 9, "text": "سوال 9: متن سوال نهم", "answered": true },
+    { "id": 10, "text": "سوال 10: متن سوال دهم", "answered": false }
+  ]
+}

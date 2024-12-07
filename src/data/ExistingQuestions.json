@@ -1,0 +1,11 @@
+{
+  "questions": [
+    { "category": "سینما", "question": "یک صورت سوال نمونه؟", "answer": 1 },
+    { "category": "تاریخ", "question": "پایتخت ایران کجاست؟", "answer": 1 },
+    { "category": "ورزش", "question": "اسم این وبسایت چیه؟", "answer": 4 },
+    { "category": "هوش", "question": "سعدی شاعر قرن چندمه؟", "answer": 3 },
+    { "category": "سینما", "question": "سری فیلم های جنگ ستارگان تولید چه کشوریه؟", "answer": 2 },
+    { "category": "تاریخ", "question": "تاریخ شروع جنگ جهانی اول رو بگو!", "answer": 3 },
+    { "category": "ریاضی", "question": "sin(30) = ?", "answer": 4 }
+  ]
+}
