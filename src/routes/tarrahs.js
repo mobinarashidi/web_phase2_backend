@@ -25,6 +25,24 @@ router.post('/add', async (req, res) => {
     try {
         const allTarrahs = await readFileAsync(pathToJson);
 
+        // Check if the username already exists
+        const nameExists = allTarrahs.tarrahs.some(
+            tarrah => tarrah.name === newTarrah.name
+        );
+
+        if (nameExists) {
+            return res.status(409).json({ message: `${newTarrah.name} already exists.` });
+        }
+
+        // Check if the email already exists
+        const emailExists = allTarrahs.tarrahs.some(
+            tarrah => tarrah.email === newTarrah.email
+        );
+
+        if (emailExists) {
+            return res.status(409).json({ message: `${newTarrah.email} already has an account.` });
+        }
+
         // Append the new tarrah to the existing array
         allTarrahs.tarrahs.push(newTarrah);
 
