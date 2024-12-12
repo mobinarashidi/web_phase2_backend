@@ -6,6 +6,7 @@ const questionsRoutes = require('./routes/questions');
 const answeredQuestionsRoutes = require('./routes/answeredQuestions');
 const profilesRoutes = require('./routes/profiles');
 const playerProfileCardRoutes = require('./routes/playerProfileCard');
+const tarrahsRoutes = require('./routes/tarrahs')
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use('/api/questions', questionsRoutes);
 app.use('/api/answered-questions', answeredQuestionsRoutes);
 app.use('/api/profiles', profilesRoutes);
 app.use('/api/player', playerProfileCardRoutes);
+app.use('/api/tarrahs', tarrahsRoutes);
 
 // Default route
 app.get('/', (req, res) => {
