@@ -66,7 +66,7 @@ router.get('/', async (req, res) => {
 });
 
 // Read - get a tarrah by its name
-router.get('/:name', async (req, res) => {
+router.get('/:username', async (req, res) => {
     const allTarrahs = await readFileAsync(pathToJson); // Await the result of readFileAsync
     const tarrah = allTarrahs.tarrahs.find(t => t.username === req.params.username); // Access tarrahs from the resolved value
     if (!tarrah) {
@@ -76,7 +76,7 @@ router.get('/:name', async (req, res) => {
 });
 
 // Update - update a tarrah's followers
-router.put('/followers/:name', async (req, res) => {
+router.put('/followers/:username', async (req, res) => {
     const newFollower = req.body.follower;  // Get the new follower's name from the request body
     if (!newFollower) {
         return res.status(400).json({message: "No Follower name is given in the request body"});
@@ -107,7 +107,7 @@ router.put('/followers/:name', async (req, res) => {
 
 
 // Update - increment a tarrah's question count
-router.put('/increment/:name', async (req, res) => {
+router.put('/increment/:username', async (req, res) => {
     const allTarrahs = await readFileAsync(pathToJson);
 
     // Find the wanted tarrah by its name
