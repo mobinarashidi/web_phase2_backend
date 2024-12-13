@@ -1,41 +1,36 @@
 {
   "tarrahs": [
     {
-      "name": "AliـRezaei",
+      "username": "alirezaei",
       "password": "12345678",
-      "followers": [
-        "MahsaـAhmadi",
-        "NimaـGhorbani"
-      ],
+      "followers": [],
       "questionCount": 20,
       "gender": "Male",
       "email": "ali.rezaei@example.com"
     },
     {
-      "name": "SaraـMohammadi",
+      "username": "saramohammadi",
       "password": "12345678",
       "followers": [
-        "AliـRezaei",
-        "ParisaـAkbari"
+        "alirezaei"
       ],
       "questionCount": 15,
       "gender": "Female",
       "email": "sara.mohammadi@example.com"
     },
     {
-      "name": "Reza",
+      "username": "reza",
       "password": "12345678",
       "followers": [
-        "Ali",
-        "Sara",
-        "Mina"
+        "alirezaei",
+        "saramohammadi"
       ],
       "questionCount": 12,
       "gender": "Male",
       "email": "reza@example.com"
     },
     {
-      "name": "FarbodـFattahi",
+      "username": "farbodft",
       "password": "12345678",
       "followers": [],
       "questionCount": 0,
@@ -43,24 +38,12 @@
       "email": "farbod.ftth@example.com"
     },
     {
-      "name": "MobinaـRashidi",
+      "username": "mobina",
       "password": "12345678",
       "followers": [],
       "questionCount": 0,
       "gender": "Female",
       "email": "mobina@example.com"
-    },
-    {
-      "username": "newplayer",
-      "password": "newpassword",
-      "name": "New Player",
-      "email": "newplayer@example.com"
-    },
-    {
-      "username": "newpjlakdkjher",
-      "password": "newpassword",
-      "name": "New Player",
-      "email": "newnkplayer@example.com"
     }
   ]
 }
