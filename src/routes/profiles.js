@@ -3,6 +3,9 @@ const fs = require('fs').promises;
 const path = require('path');
 const router = express.Router();
 
+
+// دریافت تمامی پروفایل‌ها
+router.get('/', async (req, res) => {
 const profilesPath = path.join(__dirname, '../data/players.json'); // مسیر فایل JSON
 
 // توابع کمکی برای خواندن و نوشتن فایل
@@ -17,6 +20,7 @@ const writeFileAsync = async (filePath, data) => {
 
 // دریافت لیست پروفایل‌ها
 router.get('/players', async (req, res) => {
+
     try {
         const data = await readFileAsync(profilesPath);
         res.json(data.players);
@@ -25,6 +29,27 @@ router.get('/players', async (req, res) => {
         res.status(500).json({ message: 'Failed to load profiles', error: error.message });
     }
 });
+
+
+// دریافت امتیاز بازیکن
+router.get('/:username', async (req, res) => {
+    try {
+        const data = await readFileAsync(profilesPath);
+        const profiles = data.players; // مقداردهی پروفایل‌ها از فایل
+        const { username } = req.params;
+        const profile = profiles.find(profile => profile.username === username);
+
+        if (profile) {
+            res.json({ score: profile.score });
+        } else {
+            res.status(404).send('بازیکن پیدا نشد.');
+        }
+    } catch (error) {
+        console.error('Error reading profiles:', error);
+        res.status(500).json({ error: 'Failed to load profile.' });
+    }
+});
+
 
 router.put('/players/followings/:name', async (req, res) => {
     const newFollowing = req.body.following; // The name of the player to follow

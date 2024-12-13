@@ -613,6 +613,12 @@
           "answered": false
         }
       ]
+    },
+    {
+      "username": "newplayer",
+      "password": "newpassword",
+      "name": "New Player",
+      "email": "newplayer@example.com"
     }
   ]
 }
