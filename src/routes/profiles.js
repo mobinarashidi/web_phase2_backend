@@ -5,7 +5,6 @@ const router = express.Router();
 
 
 // دریافت تمامی پروفایل‌ها
-router.get('/', async (req, res) => {
 const profilesPath = path.join(__dirname, '../data/players.json'); // مسیر فایل JSON
 
 // توابع کمکی برای خواندن و نوشتن فایل
@@ -106,3 +105,4 @@ router.put('/players/followings/:name', async (req, res) => {
 
 
 module.exports = router;
+
