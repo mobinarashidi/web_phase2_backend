@@ -1,41 +1,36 @@
 {
   "tarrahs": [
     {
-      "username": "AliRezaei",
+      "username": "alirezaei",
       "password": "12345678",
-      "followers": [
-        "Mahsa Ahmadi",
-        "Nima Ghorbani"
-      ],
+      "followers": [],
       "questionCount": 20,
       "gender": "Male",
       "email": "ali.rezaei@example.com"
     },
     {
-      "username": "Sara_Mohammadi",
+      "username": "saramohammadi",
       "password": "12345678",
       "followers": [
-        "Ali Rezaei",
-        "Parisa Akbari"
+        "alirezaei"
       ],
       "questionCount": 15,
       "gender": "Female",
       "email": "sara.mohammadi@example.com"
     },
     {
-      "username": "Reza",
+      "username": "reza",
       "password": "12345678",
       "followers": [
-        "Ali",
-        "Sara",
-        "Mina"
+        "alirezaei",
+        "saramohammadi"
       ],
       "questionCount": 12,
       "gender": "Male",
       "email": "reza@example.com"
     },
     {
-      "username": "FarbodFt",
+      "username": "farbodft",
       "password": "12345678",
       "followers": [],
       "questionCount": 0,
@@ -43,7 +38,7 @@
       "email": "farbod.ftth@example.com"
     },
     {
-      "username": "Mobina",
+      "username": "mobina",
       "password": "12345678",
       "followers": [],
       "questionCount": 0,

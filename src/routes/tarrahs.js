@@ -15,7 +15,7 @@ const writeJSON = (filePath, data) => fs.writeFileSync(filePath, JSON.stringify(
 // Create - add a tarrah
 router.post('/add', async (req, res) => {
     const newTarrah = {
-        name: req.body.name,
+        username: req.body.username,
         password: req.body.password,
         followers: req.body.followers,
         questionCount: req.body.questionCount,
@@ -27,11 +27,11 @@ router.post('/add', async (req, res) => {
 
         // Check if the username already exists
         const nameExists = allTarrahs.tarrahs.some(
-            tarrah => tarrah.name === newTarrah.name
+            tarrah => tarrah.username === newTarrah.username
         );
 
         if (nameExists) {
-            return res.status(409).json({ message: `${newTarrah.name} already exists.` });
+            return res.status(409).json({ message: `${newTarrah.username} already exists.` });
         }
 
         // Check if the email already exists
@@ -49,7 +49,7 @@ router.post('/add', async (req, res) => {
         // Save everything back to the JSON file
         writeJSON(pathToJson, allTarrahs);
 
-        res.status(201).json({message: `${newTarrah.name} added to tarrahs successfully.`});
+        res.status(201).json({message: `${newTarrah.username} added to tarrahs successfully.`});
     } catch (error) {
         res.status(500).json({message: "Failed to add the new tarrah."});
     }
@@ -68,7 +68,7 @@ router.get('/', async (req, res) => {
 // Read - get a tarrah by its name
 router.get('/:name', async (req, res) => {
     const allTarrahs = await readFileAsync(pathToJson); // Await the result of readFileAsync
-    const tarrah = allTarrahs.tarrahs.find(t => t.name === req.params.name); // Access tarrahs from the resolved value
+    const tarrah = allTarrahs.tarrahs.find(t => t.username === req.params.username); // Access tarrahs from the resolved value
     if (!tarrah) {
         return res.status(404).json({message: "Tarrah not found"})
     }
@@ -86,7 +86,7 @@ router.put('/followers/:name', async (req, res) => {
     const allTarrahs = await readFileAsync(pathToJson);
 
     // Find the tarrah based on its name
-    const tarrah = allTarrahs.tarrahs.find(t => t.name === req.params.name);
+    const tarrah = allTarrahs.tarrahs.find(t => t.username === req.params.username);
     if (!tarrah) {
         return res.status(404).json({message: "Tarrah not found"});
     }
@@ -102,7 +102,7 @@ router.put('/followers/:name', async (req, res) => {
     // Write the updated data back to the JSON file
     writeJSON(pathToJson, allTarrahs);
 
-    return res.status(200).json({message: `${newFollower} added to ${tarrah.name}'s followers`});
+    return res.status(200).json({message: `${newFollower} added to ${tarrah.username}'s followers`});
 });
 
 
@@ -111,14 +111,14 @@ router.put('/increment/:name', async (req, res) => {
     const allTarrahs = await readFileAsync(pathToJson);
 
     // Find the wanted tarrah by its name
-    const tarrah = allTarrahs.tarrahs.find(t => t.name === req.params.name);
+    const tarrah = allTarrahs.tarrahs.find(t => t.username === req.params.username);
     if (!tarrah) {
         return res.status(404).json({message: "Tarrah not found"});
     }
     tarrah.questionCount++;
     writeJSON(pathToJson, allTarrahs);
 
-    return res.status(200).json({message: `${tarrah.name}'s question count updated`});
+    return res.status(200).json({message: `${tarrah.username}'s question count updated`});
 });
 
 // Delete - nothing for now
