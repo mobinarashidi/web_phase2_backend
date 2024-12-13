@@ -55,6 +55,12 @@
       "password": "newpassword",
       "name": "New Player",
       "email": "newplayer@example.com"
+    },
+    {
+      "username": "newpjlakdkjher",
+      "password": "newpassword",
+      "name": "New Player",
+      "email": "newnkplayer@example.com"
     }
   ]
 }
