@@ -25,7 +25,7 @@ router.post('/add', async (req, res) => {
         );
 
         if (exists) {
-            return res.status(409).json({ message: `${newCategory.categoryName} already exists.` });
+            return res.status(409).json({ message: `${newCategory.categoryName} وجود دارد.` });
         }
 
         // Append the new category to the existing array
@@ -34,10 +34,10 @@ router.post('/add', async (req, res) => {
         // Save everything back to the JSON file
         writeJSON(pathToJson, allCategories);
 
-        res.status(201).json({message: `${newCategory.categoryName} added to categories successfully.`});
+        res.status(201).json({message: `${newCategory.categoryName} با موفقیت اضافه شد.`});
     } catch (error) {
         console.error('Error adding category:', error);
-        res.status(500).json({message: "Failed to add new category."});
+        res.status(500).json({message: "اضافه کردن دسته بندی انجام نشد."});
     }
 });
 
