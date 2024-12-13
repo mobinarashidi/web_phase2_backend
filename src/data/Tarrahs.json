@@ -9,6 +9,7 @@
       "email": "ali.rezaei@example.com"
     },
     {
+
       "username": "saramohammadi",
       "password": "12345678",
       "followers": [
@@ -38,9 +39,12 @@
       "email": "farbod.ftth@example.com"
     },
     {
+
       "username": "mobina",
       "password": "12345678",
-      "followers": [],
+      "followers": [
+        "elnaz"
+      ],
       "questionCount": 0,
       "gender": "Female",
       "email": "mobina@example.com"
