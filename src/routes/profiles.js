@@ -102,7 +102,33 @@ router.put('/players/followings/:name', async (req, res) => {
     }
 });
 
+router.put('/updateScore/:username', async (req, res) => {
+    const allPlayers = await readFileAsync(profilesPath);
 
+    // creating new added question
+    const newAddedQuestion = {
+        "text": req.body.text,
+        "answered": req.body.answer
+    };
+
+    // Find the player who is following
+    const player = allPlayers.players.find(p => p.username === req.params.username);
+    if (!player) {
+        return res.status(404).json({ message: "Player not found" });
+    }
+
+    // updating player's answered questions
+    player.answeredQuestions.push(newAddedQuestion);
+
+    // updating player's score
+    player.score = req.body.score;
+
+    // Write the updated data back to the JSON file
+    await writeFileAsync(profilesPath, allPlayers);
+    return res.status(200).json({
+        message: `${player.name} profile updated`,
+    });
+});
 
 module.exports = router;
 
