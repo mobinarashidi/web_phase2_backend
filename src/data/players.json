@@ -1,9 +1,8 @@
 {
   "players": [
     {
-      "role": "بازیکن",
+      "gender" : "female",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "/photo/woman-user.png",
       "username": "mobina",
       "challenges": 26,
       "score": 1230,
@@ -65,9 +64,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "female",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "/photo/woman-user.png",
       "username": "mahsa",
       "challenges": 25,
       "score": 1200,
@@ -126,9 +124,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "Male",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "/photo/man-user.png",
       "username": "farbod",
       "challenges": 24,
       "score": 1095,
@@ -187,9 +184,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "female",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "../photo/woman-user.png",
       "username": "elnaz",
       "challenges": 23,
       "score": 1000,
@@ -248,9 +244,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "Male",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "../photo/man-user.png",
       "username": "mohammad",
       "challenges": 22,
       "score": 995,
@@ -309,9 +304,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "female",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "../photo/woman-user.png",
       "username": "maral",
       "challenges": 21,
       "score": 950,
@@ -370,9 +364,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "Male",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "../photo/man-user.png",
       "username": "milad",
       "challenges": 20,
       "score": 943,
@@ -431,9 +424,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "Male",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "../photo/man-user.png",
       "username": "ali",
       "challenges": 19,
       "score": 900,
@@ -493,9 +485,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "female",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "../photo/woman-user.png",
       "username": "melika",
       "challenges": 18,
       "score": 870,
@@ -554,9 +545,8 @@
       ]
     },
     {
-      "role": "بازیکن",
+      "gender" : "female",
       "bio": "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
-      "imageSrc": "../photo/woman-user.png",
       "username": "yalda",
       "challenges": 17,
       "score": 853,
