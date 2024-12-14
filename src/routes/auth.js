@@ -26,12 +26,12 @@ router.post('/login', (req, res) => {
 
     const user = userList.find(user => user.username === username);
     if (!user) {
-        return res.status(404).send('نام کاربری یافت نشد.لطفا ثبت نام کنید.');
+        return res.status(404).send('.نام کاربری یافت نشد.لطفا ثبت نام کنید');
     }
     if (user.password !== password) {
-        return res.status(401).send('گذرواژه نادرست است');
+        return res.status(401).send('!گذرواژه نادرست است');
     }
-    res.status(200).send('ورود موفقیت آمیز بود');
+    res.status(200).send('!ورود موفقیت آمیز بود');
 });
 
 // Register route for players and designers
@@ -41,7 +41,7 @@ router.post('/register', (req, res) => {
 
     const userExists = userList.find(user => user.username === username || user.email === email);
     if (userExists) {
-        return res.status(409).send('نام کاربری/ایمیل تکراری است. لطفا وارد شوید');
+        return res.status(409).send('.نام کاربری/ایمیل تکراری است. لطفا وارد شوید');
     }
 
     const newUser = { username, password, name, email, gender };
@@ -54,7 +54,7 @@ router.post('/register', (req, res) => {
         saveJSONFile(tarrahsFilePath, { tarrahs: userList });
     }
 
-    res.status(201).send('ثبت نام موفقیت آمیز بود');
+    res.status(201).send('!ثبت نام موفقیت آمیز بود');
 });
 
 module.exports = router;

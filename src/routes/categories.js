@@ -25,7 +25,7 @@ router.post('/add', async (req, res) => {
         );
 
         if (exists) {
-            return res.status(409).json({ message: `${newCategory.categoryName} وجود دارد.` });
+            return res.status(409).json({ message: `.${newCategory.categoryName} وجود دارد` });
         }
 
         // Append the new category to the existing array
