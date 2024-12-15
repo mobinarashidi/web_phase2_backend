@@ -36,7 +36,7 @@ router.post('/login', (req, res) => {
 
 // Register route for players and designers
 router.post('/register', (req, res) => {
-    const { role, username, password, name, email, gender } = req.body;
+    const { role, username, password, email, gender } = req.body;
     const userList = role === 'player' ? players.players : tarrahs.tarrahs;
 
     const userExists = userList.find(user => user.username === username || user.email === email);
@@ -44,8 +44,31 @@ router.post('/register', (req, res) => {
         return res.status(409).send('.نام کاربری/ایمیل تکراری است. لطفا وارد شوید');
     }
 
-    const newUser = { username, password, name, email, gender };
-    userList.push(newUser);
+    if (role === 'player') {
+        const newUser = {
+            gender: gender,
+            bio: "سلام! منم یکی از بازیکن‌های سوال پیچ هستم، خوشحال میشم باهم رقابت کنیم.",
+            username: username,
+            challenges: 0,
+            score: 0,
+            email: email,
+            password: password,
+            followers: [],
+            followings: [],
+            answeredQuestions: []
+        };
+        userList.push(newUser);
+    } else {
+        const newUser = {
+            username: username,
+            password: password,
+            followers: [],
+            questionCount: 0,
+            gender: gender,
+            email: email,
+        };
+        userList.push(newUser);
+    }
 
     // Save data back to the JSON file
     if (role === 'player') {
