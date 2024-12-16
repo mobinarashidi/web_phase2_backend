@@ -19,7 +19,7 @@ router.post('/add', async (req, res) => {
         category: req.body.category,
         text: req.body.text,
         choices: req.body.choices,
-        correctChoice: req.body.correctChoice,
+        correctChoice: req.body.correctChoice - 1,
         difficulty: req.body.difficulty,
         tarrahName: req.body.tarrahName
     };
